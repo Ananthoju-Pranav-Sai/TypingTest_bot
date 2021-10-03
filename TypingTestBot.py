@@ -16,7 +16,7 @@ while(time.time()<t+55):
     text = text[:-1]
     text = text[:-1]
     text = text+" "
-    # pyautogui.write(text)
+    pyautogui.write(text)
     time.sleep(1)
     if cv2.waitKey(25) & 0xFF == ord('q'):
         cv2.destroyAllWindows()
